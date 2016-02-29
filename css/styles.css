@@ -33,7 +33,7 @@ p {
 }
 
 svg {
-	fill: white;
+	fill: #fff;
 	width: 50px;
 	height: 50px;
 	margin: 20px;
@@ -41,7 +41,7 @@ svg {
 }
 
 svg:hover {
-	fill: red;
+	fill: #00ffff;
 }
 
 #logo:hover {
@@ -113,6 +113,11 @@ footer {
 	overflow-x: scroll;
 	overflow: hidden;
 }
+
+.col-4 a {
+	height: 100%;
+}
+
 .col-4 img {
 	height: 100%;
 }

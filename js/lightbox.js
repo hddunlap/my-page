@@ -13,15 +13,15 @@ $("body").append($overlay);
 $overlay.append($caption);
 // Capture the click event on a link to an image
 $(document).ready(function(){
-  $('.col-4 img').click(function(event){
+  $('.col-4 a').click(function(event){
     event.preventDefault();
-    var imageLocation = $(this).attr('href');
+    var imageLocation = $('.col-4 a img').attr('href');
     // Update overlay with the image linked in the anchor
     $image.attr('src',imageLocation);
     // Show the overlay
     $overlay.show();
     // Get child's alt attribute and set caption
-    var captionText = $(this).children("img").attr("alt");
+    var captionText = $('.col-4 a').children("img").attr("alt");
     $caption.text(captionText);
   });
   // When overlay is clicked...  
