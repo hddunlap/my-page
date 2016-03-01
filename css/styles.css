@@ -40,11 +40,27 @@ svg {
 	transition: 1s;
 }
 
-svg:hover {
-	fill: #00ffff;
+a {
+	text-decoration: none;
+	color: rgb(255,0,255);
+	transition: 1s;
 }
 
+a:hover {
+	color: rgb(19,255,241);
+}
+
+#behance:hover {
+	fill: rgb(62,35,255);
+}
+#twitter:hover {
+	fill: rgb(55,255,158);
+}
+#mail:hover {
+	fill: rgb(255,35,98);
+}
 #logo:hover {
+	fill: rgb(45,175,230);
 	transform: rotate(360deg);
 }
 
@@ -89,7 +105,13 @@ footer {
 	min-height: 300px;
 }
 
-.col-4 {
+.col-5 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 200px;
 	background-color: white;
 	color: black;
 }
@@ -128,6 +150,9 @@ footer {
 		text-align: center;
 		line-height: 1.4em;
 	}
+	.col-5 h3 {
+		text-align: center;
+	}
 }
 
 @media (min-width: 760px) {
@@ -146,6 +171,10 @@ footer {
 		max-width: 1000px;
 	}
 	.col-4 .wrapper {
+		padding: 40px;
+		max-width: 1000px;
+	}
+	.col-5 .wrapper {
 		padding: 40px;
 		max-width: 1000px;
 	}
