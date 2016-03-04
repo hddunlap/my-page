@@ -92,7 +92,7 @@ footer {
 	background: url('../img/hd-loop.gif') no-repeat center;
 	background-size: cover;
 	color: black;
-	height: 97vh;
+	height: 95vh;
 }
 
 .col-2 {
@@ -134,6 +134,7 @@ footer {
 	background-color: white;
 	overflow-x: scroll;
 	overflow: hidden;
+
 }
 
 .col-4 a {
@@ -142,6 +143,27 @@ footer {
 
 .col-4 img {
 	height: 100%;
+	width: auto;
+}
+/* Hide jquery slider for now */
+@media (max-width: 760px) {
+	.col-4 {
+		display: none;
+	}
+	body {
+		overflow: hidden;
+	}
+	.col-2 h1 {
+		font-size: 4em;
+	}
+	.col-5, .col-3 {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+		.main-footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 @media (min-width: 480px) {
@@ -153,6 +175,8 @@ footer {
 	.col-5 h3 {
 		text-align: center;
 	}
+
+
 }
 
 @media (min-width: 760px) {
@@ -167,10 +191,6 @@ footer {
 
 	.col-3 {
 		flex-direction: row;
-		padding: 40px;
-		max-width: 1000px;
-	}
-	.col-4 .wrapper {
 		padding: 40px;
 		max-width: 1000px;
 	}
